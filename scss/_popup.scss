@@ -1,0 +1,62 @@
+.modal-wrapper {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    .modal {
+        padding: 30px;
+        background-color: #FFFFFF;
+        z-index: 10;
+        display: flex;
+        position: relative;
+        .large-photo {
+            width: 340px;
+            img {
+                margin-bottom: 30px;
+                width: 330px;
+                height: 200px;
+            }
+            input {
+                box-sizing: border-box;
+                padding: 0;
+                height: 30px;
+                width: 330px;
+                margin-bottom: 30px;
+                border-radius: 8px;
+            }
+            .modal-btn {
+                height: 30px;
+                width: 330px;
+                margin-bottom: 30px;
+                border-radius: 8px;
+                border: none;
+                background-color: #4997D0;
+                color: #FFFFFF;
+                padding: 0;
+            }
+        }
+        .comments {
+            width: 200px;
+            .coment {
+                max-height: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                span {
+                    width: 150px;
+                }
+            }
+        }
+        .close {
+            width: 18px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
+}   
