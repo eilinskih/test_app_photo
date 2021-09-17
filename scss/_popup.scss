@@ -13,6 +13,7 @@
         background-color: #FFFFFF;
         z-index: 10;
         display: flex;
+        justify-content: space-between;
         position: relative;
         .large-photo {
             width: 340px;
@@ -42,10 +43,12 @@
         }
         .comments {
             width: 200px;
+            padding-left: 10px;
             .coment {
                 max-height: 50px;
                 display: flex;
                 flex-wrap: wrap;
+                margin-bottom: 30px;
                 span {
                     width: 150px;
                 }
