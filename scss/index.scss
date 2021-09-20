@@ -8,3 +8,8 @@ body {
     padding: 20px;
     height: 100%;
 }
+@media (max-width: 414px) {
+    body {
+        padding: 10px;
+    }
+}
