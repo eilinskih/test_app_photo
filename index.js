@@ -37,6 +37,8 @@ async function onPhotoClick(e) {
         coment.append(comentText);
         document.getElementById(`${item.id}text`).innerHTML = item.text;
     })
+    document.body.style.overflow = "hidden";
+
 };
 
 async function sendComent() {
@@ -65,15 +67,16 @@ function onCloseClick() {
     const comentsContainer = document.getElementsByClassName('coment');
     modalId = null;
     for (let i = 0; i < comentsContainer.length; i++) {
-        let coment = document.getElementById(comentsContainer[i].id);
+        const coment = document.getElementById(comentsContainer[i].id);
         coment.remove();
     }
     modalWindow.style.display = "none";
+    document.body.style.overflow = "visible";
 };
 
 function fillPhotoArr() {
     photoArr.forEach(item => {
-        let photo = document.createElement("img");
+        const photo = document.createElement("img");
         photo.id = item.id;
         photoContainer.append(photo);
         photo.src = item.url;
