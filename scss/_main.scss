@@ -1,0 +1,34 @@
+
+    .photo-container {
+        max-width: 750px;
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+        img {
+         width: 230px;
+         height: 140px;
+         margin: 15px 10px;
+         cursor: pointer;   
+        }
+    }
+
+@media (max-width: 414px) {
+    .photo-container {
+        max-width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+        img {
+         width: 100%;
+         height: 100%;
+         margin: 15px 0;
+         cursor: pointer;   
+        }
+    }
+}

@@ -1,0 +1,27 @@
+footer {
+    width: 95%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+
+    .footer-copyright {
+        text-align: center;
+        margin: 0 auto;
+        color: #CCCCCC;
+        display: block;
+    }
+}
+
+@media (max-width: 414px) {
+    footer {
+        width: 95%;
+        height: 50px;
+        position: static;    
+        .footer-copyright {
+            text-align: center;
+            margin: 0 auto;
+            color: #CCCCCC;
+            display: block;
+        }
+    }
+}
